@@ -2,8 +2,8 @@
 
 Este arquivo foi criado com a intenção de ler o conteúdo de um arquivo e
 modificar os valores dos bytes, substituindo o n-ésimo valor de val_original[]
-(3º parâmetro do construtor da classe) pelo n-ésimo valor de val_alterado[]
-(4º parâmetro do construtor da classe). Ambos os arrays citados são obtidos
+(2º parâmetro do construtor da classe) pelo n-ésimo valor de val_alterado[]
+(3º parâmetro do construtor da classe). Ambos os arrays citados são obtidos
 externamente a esse arquivo, de modo que é necessário criar tais arrays, de
 acordo com a necessidade e passa-los como parâmetro para o construtor para o
 funcionamento correto dos objetos da classe.
@@ -29,7 +29,7 @@ private:
 };
 
 Mod_arquivo::Mod_arquivo(FILE *arq_ini, char val_original[], char val_alterado[]){
-    long long i;
+    //long long i;
     this->tam_arquivo = ret_tam_arq(arq_ini);
     this->cont_arq_ori = new char[this->tam_arquivo];
     le_arquivo(arq_ini);
